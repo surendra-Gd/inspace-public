@@ -1,0 +1,10 @@
+export const SPACE_REQUEST_FOUND_EXCEPTION = "Space Request Found";
+export const SPACE_REQUEST_NOT_FOUND_EXCEPTION = "Space Request Not Found";
+export const SPACE_MEMBER_EXISTS_EXCEPTION = "Space Member Exists";
+export const REQUEST_NOT_FOUND = "Friend Request not Found";
+export const UNAUTHORIZED_ACCESS = "UnAuthorized Access";
+export const REQUEST_USED = "Request Used";
+export const INVALID_STATUS = "Invalid Status";
+export const FRIENDS_NOT_FOUND = "Friends not Found";
+export const EMOJI_FOUND = "Emoji Found";
+export const EMOJI_NOT_FOUND = "Emoji Not Found";

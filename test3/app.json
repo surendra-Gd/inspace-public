@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "InSpace",
+    "slug": "InSpace",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon.png",
+    "scheme": "myapp",
+    "description": "Private space social media platform",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/splash-15.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#040404"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/ad-3.png",
+        "backgroundColor": "#000"
+      },
+      "package": "com.inspace.app",
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "FOREGROUND_SERVICE"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      "expo-asset"
+    ],
+    "notification": {
+      "icon": "./assets/images/ad-3.png",
+      "color": "#fff",
+      "androidMode": "default",
+      "androidCollapsedTitle": "New notifications"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a3cacdd1-679f-47ac-8b4d-5490c7884caa"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+package com.backend.demo.auth;
+
+import com.backend.demo.dto.CurrentUserDTO;
+import com.backend.demo.dto.UserDTO;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthenticationResponse {
+
+    @JsonProperty("access_token")
+    private String accessToken;
+
+    @JsonProperty("refresh_token")
+    private String refreshToken;
+
+    private CurrentUserDTO user;
+}
+

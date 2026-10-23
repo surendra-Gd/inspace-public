@@ -1,0 +1,79 @@
+spring:
+  main:
+    allow-circular-references: true
+  #    web-application-type: servlet --ws
+
+  data:
+    redis:
+      host: ${REDIS_URL:localhost}
+      port: ${REDIS_PORT:6379}
+      password:
+
+  jackson:
+    time-zone: Asia/Kolkata
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/projects}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:xxxx}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate  # update in dev, validate in production
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/projects}
+    user: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:xxx}
+    locations: classpath:db/migration
+#    clean-disabled: true
+
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:https://api.theinspace.net}
+  allowed-methods: "GET, POST, PUT, DELETE, OPTIONS"
+  allowed-headers: "ACCEPT, Content-Type, Authorization, X-Space-Token, X-Space-Id, X-Member-Id"
+  exposed-headers: "Authorization, X-Space-Token, X-Space-Id, X-Member-Id"
+
+application:
+  security:
+    jwt:
+      secret-key: ${JWT_KEY:xxx}
+      access-token:
+        expiration: 21600000 # 6 hour
+      refresh-token:
+        expiration: 2592000000 # 30 days
+      space-token:
+        expiration: 1800000 # 30 minutes
+
+aws:
+  region: ${AWS_REGION:xxx}
+  s3:
+    buckets:
+      avatar: ${S3_AVATAR_BUCKET:xxx}
+      post: ${S3_POST_BUCKET:xxx}
+    default:
+      user: https://inspace-raw.s3.ap-south-1.amazonaws.com/default_user_avatar.png
+      key: default_user_avatar.png
+
+mailgun:
+  api:
+    key: ${MAILGUN_API:xxx}
+  domain: email.example.com

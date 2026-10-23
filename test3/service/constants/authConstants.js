@@ -1,0 +1,21 @@
+export const SIGN_IN_SUCCESS = "SIGN_IN_SUCCESS";
+export const SIGN_UP_SUCCESS = "SIGN_UP_SUCCESS";
+export const SIGNIN_FAIL = "SIGNIN_FAIL";
+
+export const LOGOUT = "LOGOUT";
+
+export const REFRESH_TOKEN_SUCCESS = "REFRESH_TOKEN_SUCCESS";
+export const REFRESH_TOKEN_FAIL = "REFRESH_TOKEN_FAIL";
+
+export const ERROR_MESSAGE = "Something went wrong.";
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
+
+export const SET_ACCESS_TOKEN = "SET_ACCESS_TOKEN";
+
+export const SET_REFRESH_TOKEN = "SET_REFRESH_TOKEN";
+
+export const SET_USER_DATA = "SET_USER_DATA";
+export const UPDATE_USER_DATA = "UPDATE_USER_DATA";
+export const UPDATE_USERNAME = "UPDATE_USERNAME";
+
+export const SET_IS_AUTHENTICATED =  "SET_IS_AUTHENTICATED";

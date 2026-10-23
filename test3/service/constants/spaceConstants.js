@@ -1,0 +1,72 @@
+export const ADD_SPACE = 'ADD_SPACE';
+export const REMOVE_SPACE = 'REMOVE_SPACE';
+export const ADD_MEMBER = 'ADD_MEMBER';
+export const REMOVE_MEMBER = 'REMOVE_MEMBER';
+export const UPDATE_STREAK = "UPDATE_STREAK";
+export const REMOVE_REQUEST = 'REMOVE_REQUEST';
+export const ADD_POST = 'ADD_POST';
+export const REMOVE_POST = 'REMOVE_POST';
+export const SET_POST = "SET_POST";
+export const SHIFT_ADMIN = 'SHIFT_ADMIN';
+export const ADD_ACTIVITY = 'ADD_ACTIVITY';
+export const ADD_EMOJI = 'ADD_EMOJI';
+export const REMOVE_EMOJI = 'REMOVE_EMOJI';
+export const SET_CURRENT_SPACE = 'SET_CURRENT_SPACE';
+export const SET_MEMBERS = 'SET_MEMBERS'
+export const SET_ACTIVITIES = 'SET_ACTIVITIES'
+export const SET_FEED = 'SET_FEED'
+export const SET_POSTS = "SET_POSTS"
+export const SET_POST_RESPONSES = "SET_POSTS_RESPONSES";
+export const SET_POST_COMMENTS = "SET_POST_COMMENTS";
+export const SET_POST_COUNT = 'SET_POST_COUNT'
+export const CLEAR_CURRENT_SPACE = 'CLEAR_CURRENT_SPACE'
+export const SET_REQUESTS = 'SET_REQUESTS'
+export const SET_MEMBER = 'SET_MEMBER';
+export const UPDATE_SPACE = "UPDATE_SPACE";
+export const ONLINE = "ONLINE";
+export const SET_POST_COMMENT_REPLIES =  "SET_POST_COMMENT_REPLIES"
+export const SET_TEXTS = "SET_TEXTS";
+export const ADD_TEXT = "ADD_TEXT";
+export const REMOVE_TEXT = "REMOVE_TEXT";
+export const MESSAGE = "MESSAGE";
+export const REPLY = "REPLY";
+export const COMMENT = "COMMENT";
+export const SET_TEXT_MESSAGES = "SET_TEXT_MESSAGES";
+export const ADD_TEXT_MESSAGE = "ADD_TEXT_MESSAGE";
+export const DELETE_TEXT_MESSAGE = "DELETE_TEXT_MESSAGE";
+
+
+export const LIKE_TEXT_UPDATE = "LIKE_TEXT_UPDATE";
+export const UNLIKE_TEXT_UPDATE = "UNLIKE_TEXT_UPDATE";
+
+
+export const ADD_POST_COMMENT = "ADD_COMMENT";
+export const DELETE_POST_COMMENT = "DELETE_COMMENT";
+
+
+export const ADD_REPLY = "ADD_REPLY";
+export const REMOVE_REPLY = "REMOVE_REPLY";
+
+export const SET_STREAKS = "SET_STREAKS";
+
+export const SET_UNSEEN_SPACE_REQUESTS = "SET_UNSEEN_SPACE_REQUESTS";
+export const UPDATE_UNSEEN_SPACE_REQUESTS = "UPDATE_UNSEEN_SPACE_REQUESTS";
+
+/* STOMP AND REDUX ACTIONS */
+export const UPDATE_MEMBER_ONLINE_STATUS = "UPDATE_MEMBER_ONLINE_STATUS";
+
+
+export const SPACE_ERROR = "something went wrong";
+export const REQUESTS_FAILED = "Unable to retrieve the requests.";
+export const MEMBER_EMOJI_FAILED = "Member emoji failed to retrieve";
+export const POST_RESPONSE_ERROR = "POST_RESPONSE_ERROR";
+export const GET_STREAK_ERROR = "GET_STREAK_ERROR";
+export const POST_COMMENTS_ERROR = "POST_COMMENTS_ERROR";
+export const POST_COUNT_ERROR = "POST_COUNT_ERROR";
+export const MEMBER_PAGE_ERROR = "MEMBER_PAGE_ERROR";
+export const MEMBER_POST_ERROR = "MEMBER_POST_ERROR";
+export const GET_POST_ERROR = "GET_POST_ERROR";
+export const GET_TEXT_ERROR = "GET_TEXT_ERROR";
+export const GET_TEXTS_ERROR = "GET_TEXTS_ERROR";
+export const GET_TEXT_MESSAGE_ERROR = "GET_TEXT_MESSAGE_ERROR";
+export const GET_COMMENT_REPLIES_ERROR = "GET_COMMENT_REPLIES_ERROR";
